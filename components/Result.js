@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Result() {
+export default function Result({ results }) {
   return (
-    <div>Result</div>
+    <div>
+      {results.map((result) => (
+        <h1>{result.title}</h1>
+      ))}
+    </div>
   )
 }
